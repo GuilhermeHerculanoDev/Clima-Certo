@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/outfit');
+
+*{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #add8e6, #87ceeb, #1e90ff, #4169e1);
+  width: 100%;
+  height: 100vh;
+}
+
+#title{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding-top: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 400px) {
+  .container{
+    width: 70%;
+  }
+  }
+
+.inputs{
+  display: flex;
+  justify-content: center;
+}
+
+#city{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+  padding-left: 10px;
+  width: 80%;
+  
+}
+
+#search{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: none;
+}
+
+#searchImg{
+  text-align: center;
+  border-radius: 100%;
+  padding: 2.5px;
+  width: 25px;
+}
+
+.info{
+  text-align: center;
+  background-color: #00A8FF;  
+  border-radius: 10px;
+  margin-top: 7%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#nameLocal{
+  display: none;
+  padding-top: 3%;
+  font-size: 1em;
+  color: white;
+}
+
+#containerImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#cloud{
+  width: 80px;
+  height: 80px;
+  display: none;  
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#temp{
+  color: #fff;
+  font-size: 40px;
+}
+
+#descri{
+  color: #fff;
+}
+
+#containerSecundaria{
+  display: none;
+}
+
+#infoSecundaria{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.containerInfo{
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 5px;
+}
+
+.imgInfo{
+  position: absolute;
+  top: auto;
+  width: 20px;
+  height: 20px;
+  padding-left: 2.5%;
+}
+
+.nameInfo{
+  margin-left: 10px;
+}
+
+.infoName{
+  font-size: 15px;
+}

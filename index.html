@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clima</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./images/logo/weather.svg">
+</head>
+<body>
+  <div class="container">
+    <div id="title">
+      <h1>Clima Certo</h1>
+      <p>Descubra o clima do Local que desejar</p>
+    </div>
+    <div class="inputs">
+      <input type="text" id="city" placeholder="Procure a cidade" onkeydown="verificarEnter(event)">
+      <button id="search" onclick="search()"><img src="images/button/search.png" id="searchImg"></button>
+    </div>
+
+    <div class="info">
+      <div id="infoPrincipal">
+        <div>
+           <h2 id="nameLocal">
+        </div>
+        
+        <div id="containerImg">  
+          <img src="" id="cloud">
+          <div>
+             <h1 id="temp"></h1>
+             <div class="nameInfo">
+                <p id="descri"></p>
+             </div>
+          </div>
+          
+        </div>       
+      </div>
+      </div>
+
+      <div id="containerSecundaria">
+      <div id="infoSecundaria">
+        <div class="containerInfo" id="tempMini">
+          <img src="images/info/frio.png" id="termoFrio" class="imgInfo" />
+          <div>
+            <div class="nameInfo">
+              <p class="infoName">Temp. Mínima:</p>
+              <p id="infoTempMin" ></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="containerInfo">
+          <img src="images/info/quente.png" id="termoQuente" class="imgInfo" />
+          <div>
+            <div class="nameInfo">
+              <p class="infoName">Temp. Máxima:</p>
+              <p id="infoTempMax"></p>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="containerInfo">
+          <img src="images/info/agua.png" id="humidity" class="imgInfo" />
+          <div>
+            <div class="nameInfo">
+              <p class="infoName">Humidade:</p>
+              <p id="infoHumidity" ></p>
+            </div>
+                
+          </div>
+        </div>
+        
+        <div class="containerInfo">
+          <img src="images/info/vento.png" id="vento" class="imgInfo" />
+          <div>
+            <div class="nameInfo">
+              <p class="infoName">Vento:</p>
+              <p id="infoVento" ></p>
+            </div>
+            
+        </div>
+        
+      </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
